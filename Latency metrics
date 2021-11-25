@@ -1,0 +1,41 @@
+Latency metrics
+
+AverageLatency
+Latency50thPercentile
+Latency80thPercentile
+Latency90thPercentile
+Latency95thPercentile
+Latency99thPercentile
+average_read_latency_us
+95th_read_latency_us
+99th_read_latency_us
+
+
+
+
+throughput metrics
+
+OperationThroughput
+writes_per_sec
+reads_per_sec
+ops_per_sec
+DocumentThroughput
+All_Transactions_opssec
+
+
+
+system metrics
+
+system_cpu_kernel_max
+system_cpu_kernel_mean
+system_cpu_kernel_p99
+system_cpu_user_max
+system_cpu_user_mean
+system_cpu_user_p99
+
+
+
+Error/debugging metrics
+
+ErrorRate
+ErrorsTotal
