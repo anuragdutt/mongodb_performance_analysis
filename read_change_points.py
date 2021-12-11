@@ -46,6 +46,8 @@ if __name__ =='__main__':
 		oid = jline["_id"]['$oid']
 
 		row = {
+		'oid' : oid,
+		'cedar_perf_result_id' : jline['cedar_perf_result_id'],
 		'algorithm_test_statistic_1' : jline['algorithm']['options'][0]['name'],
 		'algorithm_test_value_1' : jline['algorithm']['options'][0]['value'],
 		'algorithm_test_statistic_2' : jline['algorithm']['options'][1]['name'],
@@ -70,6 +72,10 @@ if __name__ =='__main__':
 		
 		df.to_csv(save_path, index=False)
 		count += 1
+
+		# if count == 1:
+		# 	pprint.pprint(jline)
+		# 	break
 
 		if count % 1000 == 0:
 			print(count)
