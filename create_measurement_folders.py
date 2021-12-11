@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 import re
 
-os.chdir('D:/Dropbox/Work/stony_brook/independent_study/mongodb/mongodb_performance_results/expanded_metrics/')
+os.chdir('D:/mongodb/mongodb_performance_results/expanded_metrics/')
 
 def get_measurement_folder(s):
 	mf = re.sub(r'[^a-zA-Z0-9_ ]+', '', s)
